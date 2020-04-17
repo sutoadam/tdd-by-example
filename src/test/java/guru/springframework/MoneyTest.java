@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 
-public class MoneyTest {
+class MoneyTest {
 
     @Test
     void testMultiplication() {

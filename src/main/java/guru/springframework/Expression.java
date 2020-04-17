@@ -5,5 +5,5 @@ public interface Expression {
 
     Expression times(int multiplier);
 
-    public Expression plus(Expression addend);
+    Expression plus(Expression addend);
 }
