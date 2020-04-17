@@ -31,4 +31,13 @@ public class MoneyTest {
         assertEquals("USD", Money.dollar(1).curency());
         assertEquals("CHF", Money.franc(1).curency());
     }
+
+    @Test
+    void testSimpleAddition() {
+        Money five = Money.dollar(5);
+        Expression sum = five.plus(five);
+        Bank bank = new Bank();
+        Money reduced = bank.reduce(sum, "USD");
+        assertEquals(Money.dollar(10), reduced);
+    }
 }
